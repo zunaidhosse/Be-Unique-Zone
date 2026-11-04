@@ -1,0 +1,6 @@
+{
+  "name": "BE UNIQUE ZONE | Luxury Jewelry Catalog",
+  "description": "Exclusive luxury jewelry showcase for Be Unique Zone (BUZ) with one-click WhatsApp ordering, high-resolution product inspection, and static GitHub Pages export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

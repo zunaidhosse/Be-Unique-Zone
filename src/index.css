@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #cfa95f;
+    --gold-light: #f4e8cc;
+    --gold-dark: #a67c2e;
+    --obsidian: #0b0a09;
+    --obsidian-surface: #141311;
+  }
+
+  body {
+    background-color: #0b0a09;
+    color: #e8e4dc;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-luxury {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Luxury text gradients */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #fcefd6 0%, #d4ad64 45%, #ecd9a8 70%, #aa823a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold-subtle {
+  background: linear-gradient(135deg, #f1e2bb 0%, #cfa95f 50%, #e8d5a3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Background gradients */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #dfbe78 0%, #c59d53 50%, #aa823a 100%);
+}
+
+.bg-gold-gradient-hover {
+  background: linear-gradient(135deg, #ebd091 0%, #d6ad5e 50%, #ba9348 100%);
+}
+
+.bg-radial-luxury {
+  background: radial-gradient(circle at 50% 0%, rgba(207, 169, 95, 0.12) 0%, rgba(11, 10, 9, 0) 70%);
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% { transform: translateX(-150%); }
+  100% { transform: translateX(150%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 3.5s infinite ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0a09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27231d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cfa95f;
+}
